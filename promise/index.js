@@ -1,6 +1,6 @@
 const somethingWillHappen = () => { 
     return new Promise((resolve, reject) => { 
-        if (true) { 
+        if (false) { // si da TRUE hara el Resolve si da FALSE mostrara el reject
             resolve(`Heeey!`);
         } else { 
             reject(`Whooooops`);
@@ -9,8 +9,8 @@ const somethingWillHappen = () => {
 };
 
 somethingWillHappen()
-.then(response => console.log(response))
-.catch(err => console.error(err));
+.then(response => console.log(response)) //then es para cuando se ejecuta el resolve.
+.catch(err => console.error(err));  //catch es para cuando se ejecuta el reject.
 
 //===================================================
 
