@@ -31,3 +31,4 @@ const printDate = (dateNow) => {
 }
 
 date(printDate);
+
